@@ -1,0 +1,114 @@
+let mapleader=' '
+
+set easymotion
+set surround
+set commentary
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set showmode
+set number
+" 相对当前行行数显示
+" set relativenumber
+set scrolloff=3
+set history=100000
+set clipboard=unnamed
+
+nnoremap <Leader>sc :nohlsearch<CR>
+
+nnoremap <Leader>fs :w<CR>
+
+map ' :action AceAction<CR>
+
+nnoremap <Leader>q  :q<CR>
+nnoremap <Leader>Q  :qa!<CR>
+
+nnoremap <Leader>na  <C-a>
+nnoremap <Leader>nx  <C-x>
+
+vnoremap v <Esc>
+
+
+" Redo
+nnoremap U <C-r>
+
+
+" 以下是自定义快捷键-----------------
+map sj <Plug>(easymotion-j)
+map sk <Plug>(easymotion-k)
+
+nnoremap <Leader>y mo"+yiw"ayiw
+
+nnoremap <Leader>x mo"+yiw"ayiwdiw
+
+nnoremap <Leader>v mpviw"ap'o'p
+
+nnoremap <Leader>m :action SelectIn<CR>
+
+nnoremap <Leader>e :action RecentFiles<CR>
+
+nnoremap <Leader>h <S-h>zz
+
+nnoremap <Leader>l <S-l>zz
+
+nnoremap <Leader>q <C-W>w
+
+nnoremap tn gt
+nnoremap tp gT
+
+" ==================================================
+" Show all the provided actions via `:actionlist`
+" ==================================================
+nnoremap <Leader>ga :action GotoAction<CR>
+
+nnoremap <Leader>gt :action GotoTest<CR>
+
+nnoremap <Leader>fp :action ShowFilePath<CR>
+
+nnoremap <Leader>mv :action ActivateMavenProjectsToolWindow<CR>
+noremap <Leader>re :action RenameElement<CR>
+nnoremap <Leader>rf :action RenameFile<CR>
+noremap <Leader>su :action ShowUsages<CR>
+nnoremap <Leader>tc :action CloseActiveTab<CR>
+nnoremap <Leader>tl Vy<CR>:action ActivateTerminalToolWindow<CR>
+vnoremap <Leader>tl y<CR>:action ActivateTerminalToolWindow<CR>
+
+nnoremap <Leader>gs :action GotoSymbol<CR>
+
+nnoremap <Leader>ic :action InspectCode<CR>
+
+nnoremap <Leader>oi :action OptimizeImports<CR>
+
+nnoremap <Leader>pm :action ShowPopupMenu<CR>
+
+nnoremap <Leader>rc :action ChooseRunConfiguration<CR>
+
+set ideajoinset clipboard+=ideaput
+
+sethandler <C-2> a:ide
+sethandler <C-S-2> a:ide
+sethandler <C-S-6> a:ide
+sethandler <C-;> a:ide
+sethandler <C-S-;> a:ide
+sethandler <C-A> a:ide
+sethandler <C-B> a:ide
+sethandler <C-D> a:ide
+sethandler <C-E> a:ide
+sethandler <C-F> a:ide
+sethandler <C-G> a:ide
+sethandler <C-H> a:ide
+sethandler <C-I> a:ide
+sethandler <C-J> a:ide
+sethandler <C-K> a:ide
+sethandler <C-L> a:ide
+sethandler <C-M> a:ide
+sethandler <C-N> a:ide
+sethandler <C-O> a:ide
+sethandler <C-P> a:ide
+sethandler <C-R> a:ide
+sethandler <C-S> a:ide
+sethandler <C-T> a:ide
+sethandler <C-V> a:ide
+sethandler <C-W> a:ide
+
